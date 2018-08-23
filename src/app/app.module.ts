@@ -2,22 +2,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {MatCardModule} from '@angular/material';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import {ComponentsModule} from './components/componets.module';
+import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
-    SidebarComponent,
-    DashboardComponent
+    DashboardComponent,
+
   ],
   imports: [
     BrowserModule,
-    MatCardModule
+    MatCardModule,
+    ComponentsModule
+
   ],
-  providers: [],
+  providers: [  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
