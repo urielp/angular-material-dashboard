@@ -10,6 +10,9 @@ import {MainRoute} from './RouteBasic';
 import {RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {UserService} from './userprofile/user-service';
+import {HttpClientModule} from '@angular/common/http';
+import {NotificationsService} from './services/notifications.service';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
@@ -33,7 +37,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     RouterModule.forRoot(MainRoute)
 
   ],
-  providers: [  ],
+  providers: [ UserService, NotificationsService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
