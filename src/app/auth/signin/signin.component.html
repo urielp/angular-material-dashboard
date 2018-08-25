@@ -1,0 +1,42 @@
+<div class="main-content" >
+  <div class="container-fluid">
+    <div layout="row" layout-align="center center">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header cardHeader">
+            <h4 class="card-title header ">התחבר</h4>
+            <p class="card-category header cardtitle">הזן פרטים להתחברות למערכת</p>
+          </div>
+          <div class="card-body">
+            <form (ngSubmi)="onSignIn(f)" #f="ngForm" class="text-center">
+              <div layout="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="מייל"  type="email" name="email">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div layout="row">
+                <div class="col-md-8">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="סיסמא"  type="password" name="password">
+                  </mat-form-field>
+                </div>
+              </div>
+              <mat-divider> </mat-divider>
+              <div class="row" layout-align="center center">
+                <div class="col-md-4"></div>
+                <div class="col-md-4" layout-align="center center">
+                  <button mat-raised-button type="submit" class="btn btn-outline-info pull-right" (click)="signIn()">התחבר</button>
+                  <div class="clearfix"></div>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

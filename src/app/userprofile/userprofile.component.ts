@@ -10,16 +10,20 @@ import {NotificationsService} from '../services/notifications.service';
 export class UserprofileComponent implements OnInit {
 
   constructor(private userService: UserService, private notification: NotificationsService) { }
-  user;
+  user={};
   ngOnInit() {
-    this.userService.getUserProfileById().subscribe((user) => {
-      console.log(user.data);
-      this.user = user.data;
-    });
+    // this.userService.getUserProfileById().subscribe((user) => {
+    //   console.log(user.data);
+    //   this.user = user.data;
+    // });
 
-    if(this.user === undefined) {
+    if (this.user === undefined) {
       this.notification.showNotification('bottom', 'center');
+      this.user.investorFirstName='First Name';
+      this.user.investorLastName='Last Name';
+      this.user.investorEmail='Email@Mail.com';
     }
+
   }
 
   print() {
