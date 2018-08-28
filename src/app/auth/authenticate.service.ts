@@ -8,6 +8,7 @@ export class AuthService {
 
   login() {
     this.isUserLoggedIn = true;
+    console.log("is user -" + this.isUserLoggedIn );
   }
 
   getUserStatus() {

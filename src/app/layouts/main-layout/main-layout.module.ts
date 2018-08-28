@@ -41,7 +41,7 @@ import {CommonModule} from '@angular/common';
     DashboardComponent,
     UserprofileComponent,
     SignupComponent,
-    SigninComponent,
+   // SigninComponent,
   ],
   providers: [ UserService, NotificationsService, AuthService, AuthGuard ],
 })
