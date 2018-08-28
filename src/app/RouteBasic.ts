@@ -31,13 +31,21 @@ export const MainRoute: Routes = [
     children: [
       {
         path: '',
-        loadChildren: './layouts/main-layout/main-layout.module#MainLayoutModule'
+        loadChildren: './layouts/main-layout/main-layout.module#MainLayoutModule',
+        canActivate: [AuthGuard]
       }
-    ],
-    canActivate: [AuthGuard]
-
+    ]
   },
-{path: 'signin', component: SigninComponent}
+  {
+    path: 'signin',
+    component: SigninComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: '**',
+    redirectTo: 'dashboard'
+  }
+
 ];
 @NgModule({
   imports: [
