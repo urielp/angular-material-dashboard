@@ -34,7 +34,10 @@ export const MainRoute: Routes = [
         loadChildren: './layouts/main-layout/main-layout.module#MainLayoutModule'
       }
     ],
-  }
+    canActivate: [AuthGuard]
+
+  },
+{path: 'signin', component: SigninComponent}
 ];
 @NgModule({
   imports: [

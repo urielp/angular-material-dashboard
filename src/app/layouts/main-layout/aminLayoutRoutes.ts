@@ -6,8 +6,8 @@ import {AuthGuard} from '../../auth/auth-guard.service';
 
 
 export const MainLayoutRoute: Routes = [
-  { path: '' , component: DashboardComponent, canActivate: [AuthGuard]},
+  {path: '' , component: DashboardComponent },
   { path: 'dashboard' , component: DashboardComponent },
-  { path: 'user-profile' , component: UserprofileComponent },
-  {path: 'signin', component: SigninComponent}
+  { path: 'user-profile' , component: UserprofileComponent }
+  // {path: 'signin', component: SigninComponent}
 ];

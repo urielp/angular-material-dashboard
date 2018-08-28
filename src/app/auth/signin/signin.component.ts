@@ -21,7 +21,13 @@ export class SigninComponent implements OnInit {
   }
 
   signIn() {
+    console.log('signin');
     this.loginServie.login();
-    this.router.navigate(['./dashboard']);
+    this.router.navigate(['./dashboard']).then(e => {
+      console.log(e)
+    }).catch((ex)=>{
+      console.log(ex);
+    });
+
   }
 }
