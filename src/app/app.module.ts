@@ -4,7 +4,7 @@ import {
   MatButtonModule,
   MatCardModule,
   MatDividerModule,
-  MatFormFieldModule,
+  MatFormFieldModule, MatIconModule,
   MatInputModule,
   MatRippleModule,
   MatTooltipModule
@@ -49,6 +49,7 @@ import { MainLayoutComponent } from './layouts/main-layout/main-layout.component
      MatInputModule,
      MatDividerModule,
     // MatTooltipModule,
+    MatIconModule,
     FormsModule,
     ComponentsModule,
     RouterModule,
