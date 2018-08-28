@@ -20,11 +20,11 @@ import {AuthService} from './auth/authenticate.service';
 // ];
 
 export const MainRoute: Routes = [
-  {
-    path: '',
-    redirectTo: 'dashboard',
-    pathMatch: 'full',
-  },
+  // {
+  //   path: '',
+  //   redirectTo: 'dashboard',
+  //   pathMatch: 'full',
+  // },
   {
     path: '',
     component: MainLayoutComponent,
@@ -33,7 +33,7 @@ export const MainRoute: Routes = [
         path: '',
         loadChildren: './layouts/main-layout/main-layout.module#MainLayoutModule'
       }
-    ]
+    ],
   }
 ];
 @NgModule({
