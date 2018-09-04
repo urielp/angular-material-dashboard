@@ -15,7 +15,8 @@ import {MatFormFieldModule} from '@angular/material';
   declarations: [
     FooterComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+
   ],
   exports: [
     FooterComponent,

@@ -6,6 +6,9 @@ export class AuthService {
   isUserLoggedIn = false;
 
 
+  isUserLoggedIn = false;
+
+
   login() {
     this.isUserLoggedIn = true;
     localStorage.setItem('auth', String(true));
