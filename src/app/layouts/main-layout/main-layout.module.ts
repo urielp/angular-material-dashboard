@@ -4,7 +4,7 @@ import {
   MatButtonModule,
   MatCardModule,
   MatDividerModule,
-  MatFormFieldModule,
+  MatFormFieldModule, MatIconModule,
   MatInputModule,
   MatRippleModule,
   MatTooltipModule
@@ -36,7 +36,8 @@ import {CardlistComponent} from '../../shared/cardlist/cardlist.component';
     MatInputModule,
     MatTooltipModule,
     MatDividerModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule
   ],
   declarations: [
     DashboardComponent,
