@@ -7,6 +7,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardlistComponent implements OnInit {
 
+  nameList = [
+    {
+      name:'שם כלשהוא הגיוני',
+    },
+    {
+      name:'שם כלשהוא הגיוני',
+    },
+    {
+      name:'שם כלשהוא הגיוני',
+    },
+    {
+      name:'שם כלשהוא הגיוני',
+    },
+    {
+      name:'שם כלשהוא הגיוני',
+    },
+    {
+      name:'שם כלשהוא הגיוני',
+    },
+    {
+      name:'שם כלשהוא הגיוני',
+    },
+    {
+      name:'שם כלשהוא הגיוני',
+    },
+    {
+      name:'שם כלשהוא הגיוני',
+    },
+    {
+      name:'שם כלשהוא הגיוני',
+    }
+  ]
   constructor() { }
 
   ngOnInit() {

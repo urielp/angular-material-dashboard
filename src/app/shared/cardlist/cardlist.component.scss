@@ -128,3 +128,13 @@
   line-height: 41px;
   font-size: 15px;
 }
+
+.fill-space {
+  // This fills the remaining space, by using flexbox.
+  // Every toolbar row uses a flexbox row layout.
+  flex: 1 1 auto;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
