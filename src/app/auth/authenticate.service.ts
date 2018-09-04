@@ -8,11 +8,13 @@ export class AuthService {
 
   login() {
     this.isUserLoggedIn = true;
-    console.log("is user -" + this.isUserLoggedIn );
+    localStorage.setItem('auth', 'true');
+    console.log('is user -' + this.isUserLoggedIn );
   }
 
   getUserStatus() {
-    return this.isUserLoggedIn;
+    console.log(localStorage.getItem('auth'));
+    return localStorage.getItem('auth'); // this.isUserLoggedIn;
 }
 }
 

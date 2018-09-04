@@ -26,6 +26,8 @@ import { SigninComponent } from './auth/signin/signin.component';
 import {AuthService} from './auth/authenticate.service';
 import {AuthGuard} from './auth/auth-guard.service';
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
+import { CardlistComponent } from './shared/cardlist/cardlist.component';
+
 
 @NgModule({
   declarations: [
@@ -33,9 +35,10 @@ import { MainLayoutComponent } from './layouts/main-layout/main-layout.component
     // DashboardComponent,
     // UserprofileComponent,
     // SignupComponent,
-   SigninComponent,
-
+    SigninComponent,
     MainLayoutComponent,
+
+
   ],
   imports: [
     //HttpClientModule,
