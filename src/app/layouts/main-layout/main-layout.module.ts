@@ -21,10 +21,11 @@ import { SignupComponent } from '../../auth/signup/signup.component';
 import { SigninComponent } from '../../auth/signin/signin.component';
 import {AuthService} from '../../auth/authenticate.service';
 import {AuthGuard} from '../../auth/auth-guard.service';
-
+import { PaginationComponent } from '../../shared/pagination/pagination.component';
 
 import {HttpClientModule} from '@angular/common/http';
 import {CommonModule} from '@angular/common';
+import {CardlistComponent} from '../../shared/cardlist/cardlist.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -41,6 +42,8 @@ import {CommonModule} from '@angular/common';
     DashboardComponent,
     UserprofileComponent,
     SignupComponent,
+    PaginationComponent,
+    CardlistComponent,
    // SigninComponent,
   ],
   providers: [ UserService, NotificationsService, AuthService, AuthGuard ],
