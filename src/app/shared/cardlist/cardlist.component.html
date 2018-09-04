@@ -19,7 +19,10 @@
           </div>
 
           <div class="col-xs-3 text-right">
-            <button class="btn btn-sm btn-success btn-icon btn-round"><i class="fa fa-envelope"></i></button>
+            <button mat-raised-button type="submit" class="btn btn-success myButton btn-round btn-just-icon">
+              <i class="material-icons">mail</i>
+              <div class="ripple-container"></div>
+            </button>
           </div>
         </div>
       </li>
@@ -37,7 +40,10 @@
         </div>
 
         <div class="col-xs-3 text-right">
-          <button class="btn btn-sm btn-success btn-icon"><i class="fa fa-envelope"></i></button>
+          <button mat-raised-button type="submit" class="btn btn-success myButton btn-round btn-just-icon">
+            <i class="material-icons">mail</i>
+            <div class="ripple-container"></div>
+          </button>
         </div>
       </div></li>
       <hr class="mdc-list-divider">
@@ -54,8 +60,11 @@
             <span class="text-danger"><small>Busy</small></span>
           </div>
 
-          <div class="col-xs-3 text-right">
-            <button class="btn btn-sm btn-success btn-icon"><i class="fa fa-envelope"></i></button>
+          <div class="col-xs-3 text-left">
+            <button mat-raised-button type="submit" class="btn btn-success myButton btn-round btn-just-icon">
+              <i class="material-icons">mail</i>
+              <div class="ripple-container"></div>
+            </button>
           </div>
         </div>
       </li>
@@ -63,6 +72,6 @@
   </div>
   <div class="card-footer">
     <app-pagination></app-pagination>
-  </div>
+   </div>
 </div>
 

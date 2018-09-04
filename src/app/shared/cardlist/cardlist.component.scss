@@ -81,3 +81,50 @@
   padding-right: 15px;
   padding-left: 15px;
 }
+//.btn.btn-icon:not(.btn-footer) .fa, .btn.btn-icon:not(.btn-footer) .far, .btn.btn-icon:not(.btn-footer) .fas, .btn.btn-icon:not(.btn-footer) .nc-icon, .navbar .navbar-nav>a.btn.btn-icon:not(.btn-footer) .fa, .navbar .navbar-nav>a.btn.btn-icon:not(.btn-footer) .far, .navbar .navbar-nav>a.btn.btn-icon:not(.btn-footer) .fas, .navbar .navbar-nav>a.btn.btn-icon:not(.btn-footer) .nc-icon {
+//  position: absolute;
+//  //top: 50%;
+//  //left: 50%;
+//  transform: translate(-12px,-12px);
+//  line-height: 1.5626rem;
+//  width: 24px;
+//}
+.myButton{
+  margin-top: 0;
+  position: absolute;
+  width: 31px;
+  -webkit-transform: none;
+  transform: none;
+  left: 0;
+  top: -4px;
+  height: 100%;
+  line-height: 31px;
+  font-size: 20px;
+  bottom: 0px;
+  min-width: 31px;
+  padding: 0;
+  overflow: hidden;
+
+}
+.mat-button.btn.btn-fab, .mat-button.btn.btn-just-icon, .mat-raised-button.btn.btn-fab, .mat-raised-button.btn.btn-just-icon, .mat-raised-button.btn:not([class*=mat-elevation-z]).btn-fab, .mat-raised-button.btn:not([class*=mat-elevation-z]).btn-just-icon, .btn.btn-fab, .btn.btn-just-icon {
+  font-size: 14px;
+  min-width: 31px;
+  height: 31px;
+  width: 31px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  line-height: 41px;
+}
+.mat-button.btn.btn-fab .material-icons, .mat-button.btn.btn-fab .fa, .mat-button.btn.btn-just-icon .material-icons, .mat-button.btn.btn-just-icon .fa, .mat-raised-button.btn.btn-fab .material-icons, .mat-raised-button.btn.btn-fab .fa, .mat-raised-button.btn.btn-just-icon .material-icons, .mat-raised-button.btn.btn-just-icon .fa, .mat-raised-button.btn:not([class*=mat-elevation-z]).btn-fab .material-icons, .mat-raised-button.btn:not([class*=mat-elevation-z]).btn-fab .fa, .mat-raised-button.btn:not([class*=mat-elevation-z]).btn-just-icon .material-icons, .mat-raised-button.btn:not([class*=mat-elevation-z]).btn-just-icon .fa, .btn.btn-fab .material-icons, .btn.btn-fab .fa, .btn.btn-just-icon .material-icons, .btn.btn-just-icon .fa {
+  margin-top: 0;
+  position: absolute;
+  width: 100%;
+  -webkit-transform: none;
+  transform: none;
+  left: 0;
+  top: -5px;
+  height: 100%;
+  line-height: 41px;
+  font-size: 15px;
+}
