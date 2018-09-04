@@ -11,9 +11,16 @@ export class UserprofileComponent implements OnInit {
 
   constructor(private userService: UserService, private notification: NotificationsService) { }
   user = {
-    investorFirstName: 'First Name',
-    investorLastName : 'Last Name',
-    investorEmail : 'Email@Mail.com'
+    FirstName: 'First Name',
+    LastName : 'Last Name',
+    Email : 'Email@Mail.com',
+    Address: 'some address some place',
+    City: 'some city in the world',
+    Country: 'some country ',
+    PostalCode: 111111,
+    Comments: 'some comments',
+    Company: 'Google',
+    userName : 'userName'
   };
   ngOnInit() {
     // this.userService.getUserProfileById().subscribe((user) => {

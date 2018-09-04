@@ -6,15 +6,17 @@ export class AuthService {
   isUserLoggedIn = false;
 
 
+  isUserLoggedIn = false;
+
+
   login() {
     this.isUserLoggedIn = true;
-    localStorage.setItem('auth', 'true');
-    console.log('is user -' + this.isUserLoggedIn );
+    localStorage.setItem('auth', String(true));
+    console.log("is user -" + this.isUserLoggedIn );
   }
 
   getUserStatus() {
-    console.log(localStorage.getItem('auth'));
-    return localStorage.getItem('auth'); // this.isUserLoggedIn;
+    return localStorage.getItem('auth');// this.isUserLoggedIn;
 }
 }
 
