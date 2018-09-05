@@ -26,6 +26,7 @@ import { PaginationComponent } from '../../shared/pagination/pagination.componen
 import {HttpClientModule} from '@angular/common/http';
 import {CommonModule} from '@angular/common';
 import {CardlistComponent} from '../../shared/cardlist/cardlist.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
 @NgModule({
   imports: [
     CommonModule,
@@ -37,7 +38,8 @@ import {CardlistComponent} from '../../shared/cardlist/cardlist.component';
     MatTooltipModule,
     MatDividerModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    MatPaginatorModule
   ],
   declarations: [
     DashboardComponent,
